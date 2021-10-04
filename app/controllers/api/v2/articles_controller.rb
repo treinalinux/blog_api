@@ -7,8 +7,7 @@ module Api
 
       # GET /articles
       def index
-        # @articles = Article.all
-        @articles = Article.last
+        @articles = Article.all
 
         render json: @articles
       end
