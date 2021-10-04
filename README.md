@@ -67,3 +67,25 @@ http :3000/articles
 http :3000/articles/1
 ```
 
+## Version api
+
+```bash
+
+http :3000/api/articles
+
+http :3000/api/articles 'Accept: application/vnd.blog.v1'
+http :3000/api/articles 'Accept: application/vnd.blog.v2'
+
+http GET :3000/api/articles
+
+http POST :3000/api/articles title='Novo Blogs com Apis' body='Agora com estudos de api em Ruby On Rails com api e versionamento....'
+
+http :3000/api/articles
+http :3000/api/articles/1
+
+http PUT :3000/api/articles/1 titile='Dev Ruby and Python' body='Vagas para Desenvolvedor Ruby on Rails ou Desenvolvedor Python Django...'
+
+http :3000/api/articles
+http DELETE :3000/api/articles/4
+
+```
