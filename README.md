@@ -89,3 +89,23 @@ http :3000/api/articles
 http DELETE :3000/api/articles/4
 
 ```
+
+
+# 
+
+
+```ruby
+
+rails generate serializer article
+      create  app/serializers/article_serializer.rb
+
+
+vim app/serializers/article_serializer.rb
+...
+attributes :id, :title, :body
+...
+
+http :3000/api/articles
+
+
+```
