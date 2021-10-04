@@ -22,7 +22,7 @@ module Api
         @article = Article.new(article_params)
 
         if @article.save
-          render json: @article, status: :created, location: @article
+          render json: @article, status: :created, location: api_article_url(@article)
         else
           render json: @article.errors, status: :unprocessable_entity
         end
